@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="unknown1.png">
+  <style>
+    img {
+      border-radius: 15px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    button {
+      font-size: 50px;
+      background-color: #ffffff;
+      color: black;
+      border-radius: 10px;
+    }
+
+    .nav-container {
+      background-color: #ffffff; /* Changed background color to white */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px; /* Adjusted margin bottom */
+    }
+
+    .nav-container a {
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    .nav-container a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    body {
+      font-family: "Audiowide", sans-serif;
+      margin: 0;
+      margin-top: 30px; /* Adjusted margin top */
+    }
+
+    html {
+      font-size: 22px;
+    }
+
+    p {
+      color: #000000;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    h1 {
+      color: #ffffff;
+      text-align: left;
+      font-size: 3em;
+      margin: 20px;
+    }
+
+    #home-section,
+    #skills-section {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .about-me-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .about-me-container h1 {
+      text-align: center;
+    }
+
+    .about-me-container p {
+      text-align: center;
+    }
+
+    .box1 {
+      text-shadow: 3px 3px 3px hsl(0, 100%, 50%), -3px -3px 5px rgb(0, 195, 255);
+    }
+
+    .pr {
+      background-color: #ffffff; /* Changed background color to white */
+      text-shadow: 3px 3px 3px hsl(0, 100%, 50%);
+    }
+
+    footer {
+      clear: both;
+    }
+  </style>
+  <title>Adnan's project 101</title>
+</head>
+
+<body>
+  <div class="nav-container">
+    <a title="doesn't really do anything" href="Mywebsite.html" href="#home-section"><p>Home</p></a>
+    <a href="skills.html" target="_blank" href="#skills-section"><p>Skills</p></a>
+    <a title="goes to Socials" href="https://linktr.ee/Adnan_socials" target="_blank" href="#socials-section"><p>Socials</p></a>
+    <a title="goes to about me section" href="#about-me-section"><p>About me</p></a>
+    <a target="_blank" href="hireme.html"><p>Hire me!</p></a>
+    <a href="https://discord.gg/gAsubMCp" title="goes to discord" target="_blank"><p>DM me on Discord</p></a>
+    <a style="color: black;" href=""><p>My projects</p></a>
+  </div>
+  <div style="background-color: #ffffff; padding: 32px;"> <!-- Changed background color to white -->
+    <h1 style="text-align: center; color: tomato;" class="pr">Adnan's <br>Official <br>Portfolio</h1>
+  </div>
+  <div style="background-color: #ffffff; padding: 20px;"> <!-- Changed background color to white -->
+    <div class="about-me-container" id="about-me-section">
+      <h1 style="color: black;">Hello, I'm <u>Adnan</u>👋</h1>
+      <p><i>(I'm kinda a new coder)</i></p>
+      <img src="logo.png" width="500px">
+    </div>
+  </div>
+
+  <div>
+    <div style="background-color: #ffffff; padding: 0px;"> <!-- Changed background color to white -->
+      <button onclick="dosomething" style="font-size: 50px; background-color: #f2f2f2;">👇About me👇</button>
+      <img src="unknown.png" style="font-size: 1em; margin-right: 10px;"></img>
+      <p id="about-me-content" style="color: rgb(0, 0, 0);">I'm a 12 year old kid that started coding on December 21th, 2023. My hobbies are jiu jitsu and soccer,
+        I also love play games such as Fortnite, Minecraft, and Roblox. My favorite place to go to is Dubai because of all the delicous foods there are and very high tech stuff.
+        Coding has been a fun expierence. I also love coding because it's very uniqe and it's fun to see how games are made and how websites are devoloped.
+        Ever since i've still been coding and working hard. In the future I want to have many opportunities and work for many people and just overall have a great time. </p>
+      <footer><br><br><br>
+      </footer>
+    </div>
+    <div style="background-color: #ffffff; padding: 15px;"> <!-- Changed background color to white -->
+      <h1 style="color: black;"> <small>Why you should hire me! </small></h1>
+      <p style="color: rgb(0, 0, 0);">You should hire me because I take coding serious. I can code very easily, when I run into a bug im very problem solving. I find the bug I understand the problem and I quickly
+        fix it. One of my favorite quotes is, "Make it work, make it right, make it fast." - Kent Beck. This quote has inspired me to code better and think more understandably.
+        Im very productive and and manage time very precisely. Im very concise and different from other people. I work very hard and get through obstacles very easily. You can always rely on
+        to do the job. Im always working hard and never stop. Thank you for your time!
+      </p>
+      <p style="color: #000000;"> <small><small> &copy; 2023 MIT License Copyright.</small></small></p>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('a[href^="#about-me-section"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
